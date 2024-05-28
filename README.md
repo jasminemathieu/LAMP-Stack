@@ -38,9 +38,7 @@ Following the firewall configuration, I started the PHP installation process, be
 
 ![php extension install](https://imgur.com/1WU2rba.jpg) 
 
-# Part 2 - Restore VM
-
-## Backup via Restore 
+## MariaDB Installaion
 
 This portion of the project will cover the ...
 
