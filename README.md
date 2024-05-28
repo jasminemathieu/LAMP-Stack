@@ -28,20 +28,15 @@ After a successful install and start for Apache, I managed the firewall on ports
 ![firewall config](https://imgur.com/DpZ6Tx1.jpg) 
 
 Following the firewall configuration, I started the PHP installation process, beginning with the configuration of EPEL repository on the system. I then configured REMI and completed this step of the process with PHP installation.
-![delete test items2](https://imgur.com/vXBZtD3.jpg) 
+![install epel](https://imgur.com/vXBZtD3.jpg) 
 
-On the virtual machine, the executable was ran in PowerShell ...
-![powershell process](https://imgur.com/JZ4vhgO.jpg) 
+![config remi](https://imgur.com/JZ4vhgO.jpg) 
 
-![powershell complete](https://imgur.com/zco7Ink.jpg) 
+![remi enabled](https://imgur.com/zco7Ink.jpg) 
 
-## Backup Service - File Recovery Successfully Completed
+![php install](https://imgur.com/YNGoilw.jpg) 
 
-The backup can be found in the D drive where we can see ...
-
-![d drive](https://imgur.com/YNGoilw.jpg) 
-
-![unmounted2](https://imgur.com/1WU2rba.jpg) 
+![php extension install](https://imgur.com/1WU2rba.jpg) 
 
 # Part 2 - Restore VM
 
