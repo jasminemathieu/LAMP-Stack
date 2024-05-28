@@ -72,109 +72,107 @@ From here I was able to configure a...
 ![ip config2](https://imgur.com/iMre9vk.jpg) 
 
 The IP address configuration was complete...
-![ip complete](https://imgur.com/pxHT5iG.jpg) 
+![enable mysql](https://imgur.com/pxHT5iG.jpg) 
 
-I then created inbound rules to ...
+![phpmyadmin interface install](https://imgur.com/jCBMu0l.jpg) 
 
-![RDP config2](https://imgur.com/jCBMu0l.jpg) 
-
-![RDP confirmed](https://imgur.com/yHgH8GP.jpg) 
+![config phpmyadmin](https://imgur.com/yHgH8GP.jpg) 
 
 ## Successful Restore Confirmation
 I was able to remote into the machine and confirm the restore machine duplication was successful.
 
-![confirm restore](https://imgur.com/YifEubJ.jpg) 
+![open phpmyadmin](https://imgur.com/YifEubJ.jpg) 
 
 I ran into complications when assigning a public...
 
-![ip issues](https://imgur.com/aBWX388.jpg) 
+![open phpmyadmin2](https://imgur.com/aBWX388.jpg) 
 
-![take2](https://imgur.com/ojQllTe.jpg) 
+![open phpmyadmin3](https://imgur.com/ojQllTe.jpg) 
 
 From here I was able to configure a...
 
-![ip config2](https://imgur.com/EJLmQpy.jpg) 
+![ip phpmyadmin](https://imgur.com/EJLmQpy.jpg) 
 
 The IP address configuration was complete...
-![ip complete](https://imgur.com/OPmEvyy.jpg) 
+![http sever test](https://imgur.com/OPmEvyy.jpg) 
 
 I then created inbound rules to ...
 
-![RDP config2](https://imgur.com/a5pimMP.jpg) 
+![phpmyadmin login](https://imgur.com/a5pimMP.jpg) 
 
-![RDP confirmed](https://imgur.com/CDaO1A6.jpg) 
+![root login try](https://imgur.com/CDaO1A6.jpg) 
 
 ## Successful Restore Confirmation
 I was able to remote into the machine and confirm the restore machine duplication was successful.
 
-![confirm restore](https://imgur.com/gWZjdta.jpg) 
+![root login failure](https://imgur.com/gWZjdta.jpg) 
 
 I ran into complications when assigning a public...
 
-![ip issues](https://imgur.com/yaxRtLy.jpg) 
+![allownopw auth](https://imgur.com/yaxRtLy.jpg) 
 
-![take2](https://imgur.com/HSGIasf.jpg) 
+![allownopw auth2](https://imgur.com/HSGIasf.jpg) 
 
 From here I was able to configure a...
 
-![ip config2](https://imgur.com/fwrgRYW.jpg) 
+![login success](https://imgur.com/fwrgRYW.jpg) 
 
 The IP address configuration was complete...
-![ip complete](https://imgur.com/SyKNHBB.jpg) 
+![user check](https://imgur.com/SyKNHBB.jpg) 
 
 I then created inbound rules to ...
 
-![RDP config2](.jpg) 
+![---](.jpg) 
 
-![RDP confirmed](.jpg) 
+![---](.jpg) 
 
 ## Successful Restore Confirmation
 I was able to remote into the machine and confirm the restore machine duplication was successful.
 
-![confirm restore](.jpg) 
+![---](.jpg) 
 
 I ran into complications when assigning a public...
 
-![ip issues](.jpg) 
+![---](.jpg) 
 
-![take2](.jpg) 
+![---](.jpg) 
 
 From here I was able to configure a...
 
-![ip config2](.jpg) 
+![---](.jpg) 
 
 The IP address configuration was complete...
-![ip complete](.jpg) 
+![---](.jpg) 
 
 I then created inbound rules to ...
 
-![RDP config2](.jpg) 
+![---](.jpg) 
 
-![RDP confirmed](.jpg) 
+![---](.jpg)  
 
 ## Successful Restore Confirmation
 I was able to remote into the machine and confirm the restore machine duplication was successful.
 
-![confirm restore](.jpg) 
+![---](.jpg)  
 
 I ran into complications when assigning a public...
 
-![ip issues](.jpg) 
+![---](.jpg) 
 
-![take2](.jpg) 
+![---](.jpg) 
 
 From here I was able to configure a...
 
-![ip config2](.jpg) 
+![---](.jpg) 
 
 The IP address configuration was complete...
-![ip complete](.jpg) 
+![---](.jpg) 
 
 I then created inbound rules to ...
 
-![RDP config2](.jpg) 
+![---](.jpg) 
 
-![RDP confirmed](.jpg) 
+![---](.jpg) 
 
 ## Conclusion
 In this project, I was able to successfully configure and complete a full cloud-native backup service and machine restore to 100% data availability in Azure. Both methods prove to be powerful on-premises data protection solutions, useful in events of service disruptions, accidental deletions or corruption of data. It's equally secure, scalable, and cost-effective as it is simple to architect, highly available, and resilient.
