@@ -1,4 +1,4 @@
-# LAMP Stack Configuration
+# Database Application (Part 1: LAMP Stack Configuration)
 
 <div align="center">
   <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" height="120" alt="linux logo"  />
