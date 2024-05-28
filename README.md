@@ -17,7 +17,7 @@ This project covers the installation and configuration process of LAMP stack col
 
 ### Components used to complete this project:
 
-- Linux Centos Stream 9
+- Linux
 - Apache
 - MySQL
 - PHP
