@@ -16,27 +16,18 @@ This project covers the installation and configuration process of LAMP stack col
 
 ## Apache Web Server Installation
 
-We begin this project with the creation of a.....
+We begin this project with the installation of a Apache. During this process I performed status checks and started the program. I mistakenly scripted the code as reflected in the 2nd image below and got back on track in the 3rd image.
 
-![new vm items](https://imgur.com/jBQejrd.jpg)
+![install](https://imgur.com/jBQejrd.jpg)
 
-## Configuring Backup Services
+![bad scripting](https://imgur.com/LBc9PUh.jpg) 
 
-The backup and site r...
+![back on track](https://imgur.com/4Bh8LdG.jpg)
 
-![backup config complete](https://imgur.com/LBc9PUh.jpg) 
+After a successful install and start for Apache, I managed the firewall on ports 80 and 443.
+![firewall config](https://imgur.com/DpZ6Tx1.jpg) 
 
-# Part 1 - File Recovery
-
-## First Backup Service Completed
-The first full backup has been successfully ....
-
-![first backup](https://imgur.com/4Bh8LdG.jpg)
-
-After the executable file download was complete, test items ...
-
-![delete test items1](https://imgur.com/DpZ6Tx1.jpg) 
-
+Following the firewall configuration, I started the PHP installation process, beginning with the configuration of EPEL repository on the system. I then configured REMI and completed this step of the process with PHP installation.
 ![delete test items2](https://imgur.com/vXBZtD3.jpg) 
 
 On the virtual machine, the executable was ran in PowerShell ...
