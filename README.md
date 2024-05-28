@@ -102,17 +102,9 @@ Moving on the phpmylogin page, I experienced some complications when trying to g
 ![allownopw auth2](https://imgur.com/HSGIasf.jpg) 
 
 ## Successful MYSQL Database Login
+I was able to complete the installion and configuration process with a successful entry into the database application.
 
 ![login success](https://imgur.com/fwrgRYW.jpg) 
-
-I then created inbound rules to ...
-
-![---](.jpg) 
-
-![---](.jpg) 
-
-## Successful Restore Confirmation
-I was able to remote into the machine and confirm the restore machine duplication was successful.
 
 ## Conclusion
 In this project, I was able to successfully configure and complete a full cloud-native backup service and machine restore to 100% data availability in Azure. Both methods prove to be powerful on-premises data protection solutions, useful in events of service disruptions, accidental deletions or corruption of data. It's equally secure, scalable, and cost-effective as it is simple to architect, highly available, and resilient.
