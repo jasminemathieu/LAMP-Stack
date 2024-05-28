@@ -22,6 +22,7 @@ This project covers the installation and configuration process of LAMP stack col
 - MySQL
 - PHP
 - VMware
+- phpMyAdmin
 
 ## Apache Web Server Installation
 
