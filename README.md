@@ -13,7 +13,7 @@
 
 ## Introduction
 
-This project covers the installation and configuration process of LAMP stack collection process. This LAMP stack is comprised of four programs - Linux, Apache, MySQL and PHP, used to create and deploy a functionmal database application. 
+This project covers the installation and configuration process of LAMP stack collection process. This LAMP stack is comprised of four programs - Linux, Apache, MySQL and PHP, used to create and deploy a functional database application. 
 
 ### Components used to complete this project:
 
@@ -51,28 +51,28 @@ Following the firewall configuration, I started the PHP installation process, be
 
 This portion of the project will cover the ...
 
-![restore vm start](https://imgur.com/J31VDcT.jpg) 
+![install php mysql](https://imgur.com/J31VDcT.jpg) 
 
 The backup restore asset has been configured as displayed below....
 
-![config complete](https://imgur.com/H09pOrL.jpg) 
+![install mariadb server](https://imgur.com/H09pOrL.jpg) 
 
 After unsuccessful attempts of accessing the virtual...
 
-![recoveredvm no ip2](https://imgur.com/IbsfzN3.jpg) 
+![mariadb install complete](https://imgur.com/IbsfzN3.jpg) 
 
 I ran into complications when assigning a public...
 
-![ip issues](https://imgur.com/eLXry5H.jpg) 
+![mariadb status check](https://imgur.com/eLXry5H.jpg) 
 
-![take2](https://imgur.com/1Jat4nX.jpg) 
+![open mariadb](https://imgur.com/1Jat4nX.jpg) 
 
 From here I was able to configure a...
 
-![ip config2](https://imgur.com/iMre9vk.jpg) 
+![maria enabled](https://imgur.com/iMre9vk.jpg) 
 
 The IP address configuration was complete...
-![enable mysql](https://imgur.com/pxHT5iG.jpg) 
+![mariadb user setup/enable mysql](https://imgur.com/pxHT5iG.jpg) 
 
 ![phpmyadmin interface install](https://imgur.com/jCBMu0l.jpg) 
 
