@@ -34,7 +34,7 @@ Using a Linux virtual machine deployed on VMware, we begin this project with the
 
 ![back on track](https://imgur.com/4Bh8LdG.jpg)
 
-After Apache was successfully installed and turned on, I ensured firewall services on ports 80 and 443 were available by running the follwing commands:
+After Apache was successfully installed and turned on, I ensured firewall services on ports 80 and 443 were available by running the following commands:
 
 `firewall-cmd --permanent --add-service=http` <br/>
 
@@ -53,7 +53,7 @@ I also restarted the firewalld.service after the ports were confirmed to be enab
 
 ![php extension install](https://imgur.com/1WU2rba.jpg) 
 
-## MariaDB / MySQL Installaion
+## MariaDB / MySQL Installation 
 
 I installed php-mysql as displayed below and the supported fork of the MySQL, MariaDB to ensure access to MySQL’s data and table definition files and also identical client protocols, client APIs, ports, and sockets.
 
@@ -73,7 +73,8 @@ I then started a secure installation of MySQL as reflected below.
 
 ![maria enabled](https://imgur.com/iMre9vk.jpg) 
 
-I completed the authorazation portion of the install that I believe caused as issue we will see later in this project. 
+I completed the authorization portion of the install that I believe caused as issue we will see later in this project. 
+
 ![mariadb user setup/enable mysql](https://imgur.com/pxHT5iG.jpg) 
 
 ## phpMyAdmin Configuration
@@ -111,7 +112,7 @@ I opened the configuration file for phpMyAdmin and changed the password requirem
 ![allownopw auth2](https://imgur.com/HSGIasf.jpg) 
 
 ## Successful MYSQL Database Login
-I completed the installion and configuration process as reflected with a successful entry into the database application.
+I completed the installation and configuration process as reflected with a successful entry into the database application.
 
 ![login success](https://imgur.com/fwrgRYW.jpg) 
 
