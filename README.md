@@ -34,13 +34,13 @@ Using a Linux virtual machine deployed on VMware, we begin this project with the
 
 ![back on track](https://imgur.com/4Bh8LdG.jpg)
 
-After Apache was successfully installed and turned on, I ensured firewall services on ports 80 and 443 were available on the system by running the follwing commands:
+After Apache was successfully installed and turned on, I ensured firewall services on ports 80 and 443 were available by running the follwing commands:
 
 `firewall-cmd --permanent --add-service=http` <br/>
 
 `firewall-cmd --permanent --add-service=https`
 
-Following managing the firewall, I started the PHP installation process with the configuration of EPEL repository on the system. I then configured REMI and completed this step of the process with PHP installation.
+I also restarted the firewalld.service after the ports were confirmed to be enabled. I started the PHP installation section of the process with adding the EPEL repository on the system, followed by REMI. I completed this step of the process with the PHP installation as displayed in the next 5 images.
 ![install epel](https://imgur.com/vXBZtD3.jpg) 
 
 ![config remi](https://imgur.com/JZ4vhgO.jpg) 
