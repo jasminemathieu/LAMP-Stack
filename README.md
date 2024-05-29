@@ -1,14 +1,9 @@
 # Database Application (Part 1: LAMP Stack Configuration)
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" height="120" alt="linux logo"  />
-  <img width="36" />
-  <img src="https://seeklogo.com/images/A/apache-logo-89257496F9-seeklogo.com.png" height="120" alt="apache logo"  />
-  <img width="36" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" height="120" alt="mysql logo"  />
-  <img width="36" />
-  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/PHP-logo.svg/2560px-PHP-logo.svg.png" height="110" alt="PHP logo"  />
-  <img width="30" />
+  
+ ![LAMP](https://imgur.com/LrpKNa7.jpg) 
+ 
 </div>
 
 ## Introduction
