@@ -8,20 +8,25 @@
 
 ## Introduction
 
-This project covers the installation and configuration of a LAMP stack collection process. This LAMP stack is comprised of four programs - Linux, Apache, MySQL and PHP, used to create and deploy a functional database application. 
+This project focuses on the installation and configuration of a LAMP stack—a combination of four essential components: **Linux**, **Apache**, **MySQL**, and **PHP**. The LAMP stack enables the creation and deployment of a functional database application. Below, I’ll break down each component and provide a clearer structure for your project.
 
-### Components used to complete this project:
+## Components used to complete this project:
 
-- Linux
-- Apache
-- MySQL
-- PHP
-- VMware
-- phpMyAdmin
+1. Linux
+2. Apache
+3. MySQL
+4. PHP
+
+Additional tools:
+  - VMware
+  - phpMyAdmin
 
 ## Apache Web Server Installation
 
-Using a Linux virtual machine deployed on VMware, we begin this project with the installation of Apache. During this process I performed status checks to ensure proper configuration and started the Apache program. I mistakenly scripted the code as reflected in the 2nd image below and got back on track in the 3rd image.
+1. Installation Process:
+  - Begin by installing Apache on your Linux virtual machine deployed in VMware.
+  - During the installation, perform status checks to ensure proper configuration.
+  - If you encounter any issues (as seen in the “bad scripting” image), troubleshoot and correct them promptly.
 
 ![install](https://imgur.com/jBQejrd.jpg)
 
@@ -29,28 +34,44 @@ Using a Linux virtual machine deployed on VMware, we begin this project with the
 
 ![back on track](https://imgur.com/4Bh8LdG.jpg)
 
+2. Firewall Configuration:
+  - Confirm that firewall services are available on ports 80 (HTTP) and 443 (HTTPS).
+  - Use the following commands:
 After Apache was successfully installed and turned on, I ensured firewall services on ports 80 and 443 were available by running the following commands:
+#
+    firewall-cmd --permanent --add-service=http
+    firewall-cmd --permanent --add-service=https
 
-`firewall-cmd --permanent --add-service=http` <br/>
-
-`firewall-cmd --permanent --add-service=https`
 
 ## PHP and Dependencies Installation
 
-I also restarted the firewalld.service after the ports were confirmed to be enabled. I started the PHP installation section of the process with adding the EPEL repository on the system, followed by REMI. I completed this step of the process with the PHP installation as displayed in the next 5 images.
+1. EPEL and REMI Repositories:
+   - Add the EPEL repository to your system.
+   - Configure the REMI repository to access additional PHP packages.
+
 ![install epel](https://imgur.com/vXBZtD3.jpg) 
 
 ![config remi](https://imgur.com/JZ4vhgO.jpg) 
 
 ![remi enabled](https://imgur.com/zco7Ink.jpg) 
 
+2. PHP Installation:
+   - Install PHP using the appropriate package manager.
+   - Verify that PHP is correctly installed and configured.
+
 ![php install](https://imgur.com/YNGoilw.jpg) 
+
+3. PHP Extensions:
+   - Install necessary PHP extensions for your project.
+   - Ensure compatibility with the LAMP stack.
 
 ![php extension install](https://imgur.com/1WU2rba.jpg) 
 
 ## MariaDB / MySQL Installation 
 
-I installed php-mysql as displayed below and the supported fork of the MySQL, MariaDB to ensure access to MySQL’s data and table definition files and also identical client protocols, client APIs, ports, and sockets.
+1. php-mysql and MariaDB:
+   - Install the php-mysql package to enable PHP’s interaction with MySQL.
+   - Choose MariaDB as the MySQL fork for compatibility.
 
 ![install php mysql](https://imgur.com/J31VDcT.jpg) 
 
@@ -58,13 +79,17 @@ I installed php-mysql as displayed below and the supported fork of the MySQL, Ma
 
 ![mariadb install complete](https://imgur.com/IbsfzN3.jpg) 
 
-I ran a status check on Mariadb to confirm proper configuration and enabled the service.
+2. MariaDB Configuration:
+   - Confirm proper configuration by checking the status of MariaDB.
+   - Enable the MariaDB service.
 
 ![mariadb status check](https://imgur.com/eLXry5H.jpg) 
 
 ![open mariadb](https://imgur.com/1Jat4nX.jpg) 
 
-I then started a secure installation of MySQL as reflected below.
+3. Secure MySQL Installation:
+   - Run a secure installation for MySQL.
+   - Set up user accounts and access privileges.
 
 ![maria enabled](https://imgur.com/iMre9vk.jpg) 
 
