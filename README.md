@@ -98,13 +98,21 @@ I completed the authorization portion of the install that I believe caused as is
 ![mariadb user setup/enable mysql](https://imgur.com/pxHT5iG.jpg) 
 
 ## phpMyAdmin Configuration
-In the final installation step, phpMyAdmin was successfully added. This administration tool for MySQL and MariaDB will act as a portable web application for the database.
+In the final installation step, we’ll explore the installation and configuration of phpMyAdmin—an essential administration tool for managing MySQL and MariaDB databases. phpMyAdmin provides a convenient web-based interface, allowing you to perform various database-related tasks.
+
+1. Installing phpMyAdmin
+   - Begin by installing phpMyAdmin on your server. You can use package managers like apt, yum, or dnf.
+   - Verify that phpMyAdmin is correctly installed.
 
 ![phpmyadmin interface install](https://imgur.com/jCBMu0l.jpg) 
 
 ![config phpmyadmin](https://imgur.com/yHgH8GP.jpg) 
 
-I configured the phpMyAdmin to grant access to all instead of only the local host for easier login.
+2. Configuring phpMyAdmin
+   - Access the phpMyAdmin configuration file (located at `/etc/phpMyAdmin/config.inc.php`).
+   - Modify the configuration settings as needed. For example, you can adjust the following:
+       - Grant Access: By default, phpMyAdmin allows access only from the localhost. Consider granting access to all hosts for easier login (but ensure proper security measures).
+       - Other settings related to authentication, themes, and features.
 
 ![open phpmyadmin](https://imgur.com/YifEubJ.jpg) 
 
