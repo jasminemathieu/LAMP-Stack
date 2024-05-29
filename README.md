@@ -24,9 +24,8 @@ Additional tools:
 ## Apache Web Server Installation
 
 1. Installation Process:
-  - Begin by installing Apache on your Linux virtual machine deployed in VMware.
-  - During the installation, perform status checks to ensure proper configuration.
-  - If you encounter any issues (as seen in the “bad scripting” image), troubleshoot and correct them promptly.
+  - Begin by installing Apache on the Linux virtual machine deployed in VMware.
+  - During the installation, we performed status checks to ensure proper configuration.
 
 ![install](https://imgur.com/jBQejrd.jpg)
 
@@ -37,7 +36,7 @@ Additional tools:
 2. Firewall Configuration:
   - Confirm that firewall services are available on ports 80 (HTTP) and 443 (HTTPS).
   - Use the following commands:
-After Apache was successfully installed and turned on, I ensured firewall services on ports 80 and 443 were available by running the following commands:
+
 #
     firewall-cmd --permanent --add-service=http
     firewall-cmd --permanent --add-service=https
@@ -46,7 +45,7 @@ After Apache was successfully installed and turned on, I ensured firewall servic
 ## PHP and Dependencies Installation
 
 1. EPEL and REMI Repositories:
-   - Add the EPEL repository to your system.
+   - Add the EPEL repository to the system.
    - Configure the REMI repository to access additional PHP packages.
 
 ![install epel](https://imgur.com/vXBZtD3.jpg) 
@@ -62,7 +61,7 @@ After Apache was successfully installed and turned on, I ensured firewall servic
 ![php install](https://imgur.com/YNGoilw.jpg) 
 
 3. PHP Extensions:
-   - Install necessary PHP extensions for your project.
+   - Install necessary PHP extensions.
    - Ensure compatibility with the LAMP stack.
 
 ![php extension install](https://imgur.com/1WU2rba.jpg) 
@@ -93,15 +92,13 @@ After Apache was successfully installed and turned on, I ensured firewall servic
 
 ![maria enabled](https://imgur.com/iMre9vk.jpg) 
 
-I completed the authorization portion of the install that I believe caused as issue we will see later in this project. 
-
 ![mariadb user setup/enable mysql](https://imgur.com/pxHT5iG.jpg) 
 
 ## phpMyAdmin Configuration
-In the final installation step, we’ll explore the installation and configuration of phpMyAdmin—an essential administration tool for managing MySQL and MariaDB databases. phpMyAdmin provides a convenient web-based interface, allowing you to perform various database-related tasks.
+In the final installation step, we’ll explore the installation and configuration of phpMyAdmin—an essential administration tool for managing MySQL and MariaDB databases. phpMyAdmin provides a convenient web-based interface, allowing access to perform various database-related tasks.
 
 1. Installing phpMyAdmin
-   - Begin by installing phpMyAdmin on your server. You can use package managers like apt, yum, or dnf.
+   - Begin by installing phpMyAdmin on the server.
    - Verify that phpMyAdmin is correctly installed.
 
 ![phpmyadmin interface install](https://imgur.com/jCBMu0l.jpg) 
@@ -109,42 +106,44 @@ In the final installation step, we’ll explore the installation and configurati
 ![config phpmyadmin](https://imgur.com/yHgH8GP.jpg) 
 
 2. Configuring phpMyAdmin
-   - Access the phpMyAdmin configuration file (located at `/etc/phpMyAdmin/config.inc.php`).
-   - Modify the configuration settings as needed. For example, you can adjust the following:
-       - Grant Access: By default, phpMyAdmin allows access only from the localhost. Consider granting access to all hosts for easier login (but ensure proper security measures).
-       - Other settings related to authentication, themes, and features.
-
+   - Access the phpMyAdmin configuration file `/etc/phpMyAdmin/config.inc.php`).
+   - Modify the configuration settings:
+       - Grant Access: By default, phpMyAdmin allows access only from the localhost. We added a granted access to all hosts line for easier login.
+       
 ![open phpmyadmin](https://imgur.com/YifEubJ.jpg) 
 
 ![open phpmyadmin2](https://imgur.com/aBWX388.jpg) 
 
-I then restarted and checked the httpd.service 
+3. Restarting Services
+   - After making changes, restart the Apache service (`httpd.service`) to apply the configuration.
+
 ![open phpmyadmin3](https://imgur.com/ojQllTe.jpg) 
 
-After copying the IP address set for the phpMyAdmin account, it was confirmed to work as reflected in the second image below.
+4. Initial Login
+  - Access phpMyAdmin via web browser using the server’s IP address or domain name.
+  - After encountering issues at login (“root login failure”), we troubleshooted by checking the configuration and user credentials.
 
 ![ip phpmyadmin](https://imgur.com/EJLmQpy.jpg) 
 
 ![http sever test](https://imgur.com/OPmEvyy.jpg) 
 
-On the phpMyAdmin login page I experienced complications when attempting to enter the account, as reflected in the error message in the second image. 
-
 ![phpmyadmin login](https://imgur.com/a5pimMP.jpg) 
 
 ![root login failure](https://imgur.com/gWZjdta.jpg) 
 
-I opened the configuration file for phpMyAdmin and changed the password requirements to have the ability to enter the site without a password for my first initial sign in with the plan to change the password upon entry to the account.
+5. Temporary Password Setup
+   - We opened the configuration file for phpMyAdmin 
+   - To simplify initial access, we allowed login without a password (for the first sign-in).
+   - We will change the password promptly after successful login.
 
 ![allownopw auth](https://imgur.com/yaxRtLy.jpg) 
 
 ![allownopw auth2](https://imgur.com/HSGIasf.jpg) 
 
-## Successful MYSQL Database Login
-I completed the installation and configuration process as reflected with a successful entry into the database application.
+6. Successful Database Login
+   - Once configured, we should be able to log in successfully to phpMyAdmin.
 
 ![login success](https://imgur.com/fwrgRYW.jpg) 
 
 ## Conclusion
-In part 1 of this project, I was able to successfully install and configure a LAMP stack combination consisting of Linux, Apache, MySQL and PHP programs and dependencies. In part 2, linked [here](https://github.com/jasminemathieu/Azure-SOC), I was able to demonstrate the functionality of the phpMyAdmin database that was configured.
-
-## fin
+In Part 1 of this project, we successfully installed and configured the LAMP stack (**Linux**, **Apache**, **MySQL** and **PHP**). In Part 2 linked [here](https://github.com/jasminemathieu/Azure-SOC), we explore the interface and demonstrated the functionality of the phpMyAdmin database application.
