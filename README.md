@@ -13,7 +13,7 @@
 
 ## Introduction
 
-This project covers the installation and configuration process of LAMP stack collection process. This LAMP stack is comprised of four programs - Linux, Apache, MySQL and PHP, used to create and deploy a functional database application. 
+This project covers the installation and configuration of a LAMP stack collection process. This LAMP stack is comprised of four programs - Linux, Apache, MySQL and PHP, used to create and deploy a functional database application. 
 
 ### Components used to complete this project:
 
@@ -26,7 +26,7 @@ This project covers the installation and configuration process of LAMP stack col
 
 ## Apache Web Server Installation
 
-We begin this project with the installation of a Apache. During this process I performed status checks and started the program. I mistakenly scripted the code as reflected in the 2nd image below and got back on track in the 3rd image.
+Using a Linux virtual machine deployed on VMware, we begin this project with the installation of Apache. During this process I performed status checks to ensure proper configuration and started the Apache program. I mistakenly scripted the code as reflected in the 2nd image below and got back on track in the 3rd image.
 
 ![install](https://imgur.com/jBQejrd.jpg)
 
@@ -34,10 +34,13 @@ We begin this project with the installation of a Apache. During this process I p
 
 ![back on track](https://imgur.com/4Bh8LdG.jpg)
 
-After a successful install and start for Apache, I managed the firewall on ports 80 and 443.
-![firewall config](https://imgur.com/DpZ6Tx1.jpg) 
+After Apache was successfully installed and turned on, I ensured firewall services on ports 80 and 443 were available on the system by running the follwing commands:
 
-Following the firewall configuration, I started the PHP installation process, beginning with the configuration of EPEL repository on the system. I then configured REMI and completed this step of the process with PHP installation.
+`firewall-cmd --permanent --add-service=http` <br/>
+
+`firewall-cmd --permanent --add-service=https`
+
+Following managing the firewall, I started the PHP installation process with the configuration of EPEL repository on the system. I then configured REMI and completed this step of the process with PHP installation.
 ![install epel](https://imgur.com/vXBZtD3.jpg) 
 
 ![config remi](https://imgur.com/JZ4vhgO.jpg) 
