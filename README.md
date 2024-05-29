@@ -69,46 +69,53 @@ I ran a status check on Mariadb to confirm proper configuration and enabled the 
 
 ![open mariadb](https://imgur.com/1Jat4nX.jpg) 
 
-I than started a secure installation of MySQL as reflected below.
+I then started a secure installation of MySQL as reflected below.
 
 ![maria enabled](https://imgur.com/iMre9vk.jpg) 
 
-The IP address configuration was complete...
+I completed the authorazation portion of the install that I believe caused as issue we will see later in this project. 
 ![mariadb user setup/enable mysql](https://imgur.com/pxHT5iG.jpg) 
 
-## PHPMYADMIN Configuration
+## phpMyAdmin Configuration
+In the final installation step, phpMyAdmin was successfully added. This administration tool for MySQL and MariaDB will act as a portable web application for the database.
+
 ![phpmyadmin interface install](https://imgur.com/jCBMu0l.jpg) 
 
 ![config phpmyadmin](https://imgur.com/yHgH8GP.jpg) 
+
+I configured the phpMyAdmin to grant access to all instead of only the local host for easier login.
 
 ![open phpmyadmin](https://imgur.com/YifEubJ.jpg) 
 
 ![open phpmyadmin2](https://imgur.com/aBWX388.jpg) 
 
+I then restarted and checked the httpd.service 
 ![open phpmyadmin3](https://imgur.com/ojQllTe.jpg) 
 
-I used the IP address set for my phpmyadmin account. The IP address has been confirmed to work as reflected in the second image below.
+After copying the IP address set for the phpMyAdmin account, it was confirmed to work as reflected in the second image below.
 
 ![ip phpmyadmin](https://imgur.com/EJLmQpy.jpg) 
 
 ![http sever test](https://imgur.com/OPmEvyy.jpg) 
 
-Moving on the phpmylogin page, I experienced some complications when trying to get into the account. As reflected in the error message in the second image, I opened the configuration file for phpmyadmin and changed the password requirements to have the ability to enter the site without a password for my first initial sign in with the plan to change the password once I'm in.
+On the phpMyAdmin login page I experienced complications when attempting to enter the account, as reflected in the error message in the second image. 
 
 ![phpmyadmin login](https://imgur.com/a5pimMP.jpg) 
 
 ![root login failure](https://imgur.com/gWZjdta.jpg) 
+
+I opened the configuration file for phpMyAdmin and changed the password requirements to have the ability to enter the site without a password for my first initial sign in with the plan to change the password upon entry to the account.
 
 ![allownopw auth](https://imgur.com/yaxRtLy.jpg) 
 
 ![allownopw auth2](https://imgur.com/HSGIasf.jpg) 
 
 ## Successful MYSQL Database Login
-I was able to complete the installion and configuration process with a successful entry into the database application.
+I completed the installion and configuration process as reflected with a successful entry into the database application.
 
 ![login success](https://imgur.com/fwrgRYW.jpg) 
 
 ## Conclusion
-In this project, I was able to successfully configure and complete a full cloud-native backup service and machine restore to 100% data availability in Azure. Both methods prove to be powerful on-premises data protection solutions, useful in events of service disruptions, accidental deletions or corruption of data. It's equally secure, scalable, and cost-effective as it is simple to architect, highly available, and resilient.
+In part 1 of this project, I was able to successfully install and configure a LAMP stack combination consisting of Linux, Apache, MySQL and PHP programs and dependencies. In part 2, linked [here](https://github.com/jasminemathieu/Azure-SOC), I was able to demonstrate the functionality of the phpMyAdmin database that was configured.
 
 ## fin
