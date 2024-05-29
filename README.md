@@ -40,6 +40,8 @@ After Apache was successfully installed and turned on, I ensured firewall servic
 
 `firewall-cmd --permanent --add-service=https`
 
+## PHP and Dependencies Installation
+
 I also restarted the firewalld.service after the ports were confirmed to be enabled. I started the PHP installation section of the process with adding the EPEL repository on the system, followed by REMI. I completed this step of the process with the PHP installation as displayed in the next 5 images.
 ![install epel](https://imgur.com/vXBZtD3.jpg) 
 
@@ -51,27 +53,23 @@ I also restarted the firewalld.service after the ports were confirmed to be enab
 
 ![php extension install](https://imgur.com/1WU2rba.jpg) 
 
-## MariaDB Installaion
+## MariaDB / MySQL Installaion
 
-This portion of the project will cover the ...
+I installed php-mysql as displayed below and the supported fork of the MySQL, MariaDB to ensure access to MySQL’s data and table definition files and also identical client protocols, client APIs, ports, and sockets.
 
 ![install php mysql](https://imgur.com/J31VDcT.jpg) 
 
-The backup restore asset has been configured as displayed below....
-
 ![install mariadb server](https://imgur.com/H09pOrL.jpg) 
-
-After unsuccessful attempts of accessing the virtual...
 
 ![mariadb install complete](https://imgur.com/IbsfzN3.jpg) 
 
-I ran into complications when assigning a public...
+I ran a status check on Mariadb to confirm proper configuration and enabled the service.
 
 ![mariadb status check](https://imgur.com/eLXry5H.jpg) 
 
 ![open mariadb](https://imgur.com/1Jat4nX.jpg) 
 
-From here I was able to configure a...
+I than started a secure installation of MySQL as reflected below.
 
 ![maria enabled](https://imgur.com/iMre9vk.jpg) 
 
