@@ -41,7 +41,7 @@ After Apache was successfully installed and turned on, I ensured firewall servic
 #
     firewall-cmd --permanent --add-service=http
     firewall-cmd --permanent --add-service=https
-
+# 
 
 ## PHP and Dependencies Installation
 
