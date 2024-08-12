@@ -2,7 +2,7 @@
 
 <div align="center">
   
- ![LAMP](https://imgur.com/LrpKNa7.jpg) 
+ ![LAMP](https://imgur.com/wyxL02M.jpg) 
  
 </div>
 
