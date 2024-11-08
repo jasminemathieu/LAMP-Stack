@@ -146,4 +146,4 @@ In the final installation step, we’ll explore the installation and configurati
 ![login success](https://imgur.com/fwrgRYW.jpg) 
 
 ## Conclusion
-In Part 1 of this project, we successfully installed and configured the LAMP stack (**Linux**, **Apache**, **MySQL** and **PHP**). In Part 2 linked [here](https://github.com/jasminemathieu/Azure-SOC), we explore the interface and demonstrated the functionality of the phpMyAdmin database application.
+In Part 1 of this project, we successfully installed and configured the LAMP stack (**Linux**, **Apache**, **MySQL** and **PHP**). In Part 2 linked [here](https://github.com/jasminemathieu/Azure-SOC), we explore the interface and functionality of the phpMyAdmin database application.
